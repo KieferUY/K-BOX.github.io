@@ -45,9 +45,6 @@ table {
 	border-spacing: 0;
 }
 
-body {
-	-webkit-text-size-adjust: none;
-}
 
 mark {
 	background-color: transparent;
@@ -65,20 +62,8 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
-#logo img {
-    max-width: 210px; /* Ensures the logo is not wider than its container */
-    height: auto; /* Keeps the aspect ratio of the logo */
-	position: static;
-}
-	@media only screen and (max-device-width: 768px) {
-		.logo_alargado{
-			max-width: 50%; /* Ensures the logo is not wider than its container */
-			height: auto; /* Keeps the aspect ratio of the logo */
-			position: static;
-		}
+/* Default style for larger screens */
 
-	}
-}
 
 .text-box p {
     font-size: 0.8em; /* Ajusta según sea necesario para el tamaño deseado */
@@ -105,20 +90,23 @@ input, select, textarea {
 
 .icon.major.messenger-icon {
     margin-right: 0; /* O ajusta según sea necesario */
-    margin-left: auto; /* Ajusta según sea necesario */
+    margin-left: 0; /* Ajusta según sea necesario */
 }
 
 /* Icono de Messenger */
-.messenger-icon {
+.msg {
+	width: 80px;
     position: fixed;
-    bottom: 1.5%;
-    right: 1.2vw; /* Ajusta el margen derecho según tus necesidades */
-    outline: none;
+    bottom: 1.5%; /* Ajusta el margen inferior según tus necesidades */
+    right: 1.2%; /* Ajusta el margen izquierdo según tus necesidades */
+    outline: none; /* Elimina el contorno en el estado enfocado */
     z-index: 1000;
 }
-
+.messenger-icon img:focus,
+.messenger-icon img:active {
+    outline: none; /* Asegúrate de eliminar el contorno en el estado enfocado y activo */
+}
 .messenger-icon img {
-    width: 3vw; /* Ajusta el tamaño del ícono según tus necesidades */
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
@@ -132,7 +120,8 @@ input, select, textarea {
 }
 
 /* WhatsApp Icon Styles */
-.whatsapp-icon {
+.wsp {
+	width: 80px;
     position: fixed;
     bottom: 1.5%; /* Ajusta el margen inferior según tus necesidades */
     left: 1.2%; /* Ajusta el margen izquierdo según tus necesidades */
@@ -145,7 +134,6 @@ input, select, textarea {
     outline: none; /* Asegúrate de eliminar el contorno en el estado enfocado y activo */
 }
 .whatsapp-icon img {
-    width: 15%; /* Ajusta el tamaño del ícono según tus necesidades */
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
@@ -2627,7 +2615,7 @@ input, select, textarea {
 	}
 
 		#header h1 {
-			padding: 0 0 2.75em 0;
+			padding: 0 0 0.75em 0;
 			margin: 0;
 		}
 
@@ -3476,3 +3464,17 @@ input, select, textarea {
 			}
 
 	}
+	#logo img {
+    max-width: 210px; /* Ensures the logo is not wider than its container */
+    height: auto; /* Keeps the aspect ratio of the logo */
+	position: static;
+}
+	@media only screen and (max-device-width: 768px) {
+		.logo1{
+			max-width: 50%; /* Ensures the logo is not wider than its container */
+			height: auto; /* Keeps the aspect ratio of the logo */
+			position: static;
+		}
+
+	}
+	
