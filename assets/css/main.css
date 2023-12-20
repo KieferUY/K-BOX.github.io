@@ -65,10 +65,19 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
-@media screen and (max-width: 768px) {
-    #logo img {
-        max-width: 80%;
-    }
+#logo img {
+    max-width: 210px; /* Ensures the logo is not wider than its container */
+    height: auto; /* Keeps the aspect ratio of the logo */
+	position: static;
+}
+	@media only screen and (max-device-width: 768px) {
+		.logo_alargado{
+			max-width: 50%; /* Ensures the logo is not wider than its container */
+			height: auto; /* Keeps the aspect ratio of the logo */
+			position: static;
+		}
+
+	}
 }
 
 .text-box p {
