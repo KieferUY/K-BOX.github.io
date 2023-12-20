@@ -287,7 +287,11 @@ input, select, textarea {
 			.container {
 				width: 95%;
 			}
-
+		.logo1{
+			max-width: 8em; /* Ensures the logo is not wider than its container */
+			height: auto; /* Keeps the aspect ratio of the logo */
+			position: static;
+		}
 		}
 
 		@media screen and (max-width: 840px) {
@@ -295,7 +299,11 @@ input, select, textarea {
 			.container {
 				width: 95%;
 			}
-
+		.logo1{
+			max-width: 8em; /* Ensures the logo is not wider than its container */
+			height: auto; /* Keeps the aspect ratio of the logo */
+			position: static;
+		}
 		}
 
 		@media screen and (max-width: 736px) {
@@ -303,7 +311,11 @@ input, select, textarea {
 			.container {
 				width: 90%;
 			}
-
+		.logo1{
+			max-width: 8em; /* Ensures the logo is not wider than its container */
+			height: auto; /* Keeps the aspect ratio of the logo */
+			position: static;
+		}
 		}
 
 		@media screen and (max-width: 480px) {
@@ -311,7 +323,11 @@ input, select, textarea {
 			.container {
 				width: 100%;
 			}
-
+		.logo1{
+			max-width: 8em; /* Ensures the logo is not wider than its container */
+			height: auto; /* Keeps the aspect ratio of the logo */
+			position: static;
+		}
 		}
 
 /* Row */
