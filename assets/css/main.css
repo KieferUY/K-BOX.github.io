@@ -136,7 +136,7 @@ input, select, textarea {
     outline: none; /* Asegúrate de eliminar el contorno en el estado enfocado y activo */
 }
 .whatsapp-icon img {
-    width: 15%; /* Ajusta el tamaño del ícono según tus necesidades */
+    width: 3vw; /* Ajusta el tamaño del ícono según tus necesidades */
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
