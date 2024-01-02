@@ -3487,7 +3487,7 @@ input, select, textarea {
 }
 	@media only screen and (max-device-width: 768px) {
 		.logo1{
-			max-width: 50%; /* Ensures the logo is not wider than its container */
+			max-width: 8em; /* Ensures the logo is not wider than its container */
 			height: auto; /* Keeps the aspect ratio of the logo */
 			position: static;
 		}
